@@ -1,0 +1,29 @@
+{
+	"name": "react-esbuild-swc-template",
+	"version": "0.0.1",
+	"description": "react project template with esbuild as bundler and swc as code transformer",
+	"scripts": {
+		"build": "copyfiles index.html dist && node esbuild/build.js",
+		"dev": " copyfiles index.html dist && node esbuild/dev-start.js"
+	},
+	"type": "module",
+	"keywords": [
+		"react",
+		"swc",
+		"esbuild",
+		"template",
+		"bundle",
+		"transform"
+	],
+	"author": "Henry Ansah",
+	"license": "MIT",
+	"devDependencies": {
+		"@swc/core": "^1.2.149",
+		"esbuild": "^0.14.25"
+	},
+	"dependencies": {
+		"copyfiles": "^2.4.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	}
+}
